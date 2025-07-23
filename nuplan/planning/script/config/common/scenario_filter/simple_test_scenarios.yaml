@@ -1,0 +1,21 @@
+_target_: nuplan.planning.scenario_builder.scenario_filter.ScenarioFilter
+_convert_: 'all'
+
+scenario_types:
+  - following_lane_with_lead
+  - stopping_with_lead
+  - changing_lane
+  
+scenario_tokens: null
+log_names: null
+map_names: null
+num_scenarios_per_type: 2  # Limit to 2 scenarios per type for testing
+limit_total_scenarios: 6   # Maximum 6 scenarios total
+timestamp_threshold_s: null
+ego_displacement_minimum_m: null
+ego_start_speed_threshold: null
+ego_stop_speed_threshold: null
+speed_noise_tolerance: null
+expand_scenarios: false
+remove_invalid_goals: true
+shuffle: false
