@@ -1,0 +1,6 @@
+scenario_id,success,trajectory_points,duration_s,start_time,end_time
+acceleration_007,True,16,3.75,0.0,3.75
+acceleration_008,True,16,3.75,0.0,3.75
+lane_change_005,True,16,3.75,0.0,3.75
+lane_change_006,True,16,3.75,0.0,3.75
+straight_001,True,16,3.75,0.0,3.75

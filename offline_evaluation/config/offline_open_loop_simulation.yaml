@@ -1,0 +1,27 @@
+# Offline Open-Loop Simulation Configuration
+# Based on nuPlan's open_loop_boxes experiment but uses CSV trajectories
+
+# @package _global_  
+job_name: offline_open_loop_evaluation
+
+defaults:
+  - override /observation: box_observation                    # Use box observations 
+  - override /ego_controller: log_play_back_controller        # Use logged ego states
+  - override /planner: ../offline_evaluation/config/csv_log_future_planner  # Use CSV-based planner
+  - override /simulation_metric: simulation_open_loop_boxes   # Use open-loop metrics
+  - override /metric_aggregator:
+      - open_loop_boxes_weighted_average                      # Use weighted average aggregation
+
+# Override scenario builder to use minimal database scenarios
+# The CSV planner will provide trajectory data, database only provides map/route info
+scenario_builder:
+  scenario_filter:
+    limit_total_scenarios: 5        # Limit scenarios for testing
+
+# Simulation parameters
+simulation_time_controller:
+  num_steps: 40                     # Number of simulation steps (10 seconds at 4Hz)
+
+# Output settings
+experiment_uid: offline_evaluation
+experiment_name: offline_trajectory_evaluation

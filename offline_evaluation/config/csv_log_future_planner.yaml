@@ -1,0 +1,16 @@
+# CSV LogFuture Planner Configuration
+# This replaces nuPlan's standard log_future_planner with CSV-based version
+
+_target_: offline_evaluation.planners.csv_log_future_planner.CSVLogFuturePlanner
+_convert_: 'all'
+
+# CSV file path (will be set dynamically by runner script)
+csv_file_path: "/path/to/trajectories.csv"
+
+# Trajectory parameters (matching nuPlan's log_future_planner)
+num_poses: 16                    # number of poses in a trajectory
+future_time_horizon: 8.0         # [s] future time horizon over all poses
+
+# CSV-specific parameters
+scenario_id_column: "scenario_id"     # Column name for scenario identification
+trajectory_column_prefix: "ego_"      # Prefix for trajectory columns (ego_x, ego_y, etc.)

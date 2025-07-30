@@ -1,0 +1,15 @@
+# CSV Log Future Planner Configuration
+# Extends LogFuturePlanner to read trajectory data from CSV files for offline evaluation
+
+_target_: offline_evaluation.planners.csv_log_future_planner.CSVLogFuturePlanner
+
+# CSV file path - should be overridden at runtime
+csv_file_path: ???
+
+# Trajectory parameters (same as log_future_planner)
+num_poses: 16
+future_time_horizon: 8.0
+
+# CSV format parameters
+scenario_id_column: "scenario_id"
+trajectory_column_prefix: "ego_"

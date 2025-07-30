@@ -1,0 +1,42 @@
+[
+  {
+    "scenario_id": "acceleration_007",
+    "success": true,
+    "trajectory_points": 16,
+    "duration_s": 3.75,
+    "start_time": 0.0,
+    "end_time": 3.75
+  },
+  {
+    "scenario_id": "acceleration_008",
+    "success": true,
+    "trajectory_points": 16,
+    "duration_s": 3.75,
+    "start_time": 0.0,
+    "end_time": 3.75
+  },
+  {
+    "scenario_id": "lane_change_005",
+    "success": true,
+    "trajectory_points": 16,
+    "duration_s": 3.75,
+    "start_time": 0.0,
+    "end_time": 3.75
+  },
+  {
+    "scenario_id": "lane_change_006",
+    "success": true,
+    "trajectory_points": 16,
+    "duration_s": 3.75,
+    "start_time": 0.0,
+    "end_time": 3.75
+  },
+  {
+    "scenario_id": "straight_001",
+    "success": true,
+    "trajectory_points": 16,
+    "duration_s": 3.75,
+    "start_time": 0.0,
+    "end_time": 3.75
+  }
+]
