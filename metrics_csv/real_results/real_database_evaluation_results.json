@@ -1,0 +1,132 @@
+[
+  {
+    "scenario_name": "76a8d46a0c1a5e4f",
+    "scenario_type": "medium_magnitude_speed",
+    "metrics": {
+      "planner_expert_average_l2_error": {
+        "score": 0.9726395640745391,
+        "category": "accuracy"
+      },
+      "planner_expert_average_heading_error": {
+        "score": 0.9919762816182605,
+        "category": "accuracy"
+      },
+      "planner_expert_final_l2_error": {
+        "score": 0.9817597093830261,
+        "category": "accuracy"
+      },
+      "planner_expert_final_heading_error": {
+        "score": 0.9951857689709562,
+        "category": "accuracy"
+      },
+      "planner_miss_rate": {
+        "score": 1.0,
+        "category": "accuracy"
+      }
+    }
+  },
+  {
+    "scenario_name": "fa9ca83aa15d59cd",
+    "scenario_type": "stationary_at_traffic_light_with_lead",
+    "metrics": {
+      "planner_expert_average_l2_error": {
+        "score": 0.9818031090598077,
+        "category": "accuracy"
+      },
+      "planner_expert_average_heading_error": {
+        "score": 0.9917679253381302,
+        "category": "accuracy"
+      },
+      "planner_expert_final_l2_error": {
+        "score": 0.9878687393732052,
+        "category": "accuracy"
+      },
+      "planner_expert_final_heading_error": {
+        "score": 0.9950607552028781,
+        "category": "accuracy"
+      },
+      "planner_miss_rate": {
+        "score": 1.0,
+        "category": "accuracy"
+      }
+    }
+  },
+  {
+    "scenario_name": "7b023ba4b2b05484",
+    "scenario_type": "on_stopline_crosswalk",
+    "metrics": {
+      "planner_expert_average_l2_error": {
+        "score": 0.9812276260564925,
+        "category": "accuracy"
+      },
+      "planner_expert_average_heading_error": {
+        "score": 0.9939315770004721,
+        "category": "accuracy"
+      },
+      "planner_expert_final_l2_error": {
+        "score": 0.9874850840376617,
+        "category": "accuracy"
+      },
+      "planner_expert_final_heading_error": {
+        "score": 0.9963589462002833,
+        "category": "accuracy"
+      },
+      "planner_miss_rate": {
+        "score": 1.0,
+        "category": "accuracy"
+      }
+    }
+  },
+  {
+    "scenario_name": "ce7444b6b8a35d9d",
+    "scenario_type": "medium_magnitude_speed",
+    "metrics": {
+      "planner_expert_average_l2_error": {
+        "score": 0.9770876491122953,
+        "category": "accuracy"
+      },
+      "planner_expert_average_heading_error": {
+        "score": 0.9922783109641891,
+        "category": "accuracy"
+      },
+      "planner_expert_final_l2_error": {
+        "score": 0.9847250994081969,
+        "category": "accuracy"
+      },
+      "planner_expert_final_heading_error": {
+        "score": 0.9953669865785134,
+        "category": "accuracy"
+      },
+      "planner_miss_rate": {
+        "score": 1.0,
+        "category": "accuracy"
+      }
+    }
+  },
+  {
+    "scenario_name": "af64f20b62a55d85",
+    "scenario_type": "stationary_in_traffic",
+    "metrics": {
+      "planner_expert_average_l2_error": {
+        "score": 0.9792996692760406,
+        "category": "accuracy"
+      },
+      "planner_expert_average_heading_error": {
+        "score": 0.9914973456225628,
+        "category": "accuracy"
+      },
+      "planner_expert_final_l2_error": {
+        "score": 0.9861997795173604,
+        "category": "accuracy"
+      },
+      "planner_expert_final_heading_error": {
+        "score": 0.9948984073735376,
+        "category": "accuracy"
+      },
+      "planner_miss_rate": {
+        "score": 1.0,
+        "category": "accuracy"
+      }
+    }
+  }
+]
