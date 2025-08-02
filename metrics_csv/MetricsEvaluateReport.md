@@ -33,7 +33,7 @@ The primary objective was to create a **decoupled metrics evaluation system** th
 ### 1.2 Core Components
 
 ```mermaid
-graph TB
+graph TD
     A[Mock SimulationHistory] --> B[MetricsEngine]
     B --> C[Planner-Expert Metrics]
     C --> D[MetricStatistics Results]

@@ -1,0 +1,27 @@
+sequenceDiagram
+    participant U as User
+    participant MH as MockHistory
+    participant ME as MetricsEngine
+    participant PM as PlannerMetrics
+    participant EU as ExpertUtils
+    participant R as Results
+    
+    U->>MH: create_mock_simulation_history()
+    MH->>MH: Generate expert trajectory
+    MH->>MH: Create planner trajectories with noise
+    MH->>MH: Build SimulationHistorySamples
+    MH-->>U: (history, scenario)
+    
+    U->>ME: setup metrics & engine
+    U->>ME: compute_metric_results(history, scenario)
+    
+    ME->>PM: metric.compute(history, scenario)
+    PM->>PM: Extract planner trajectories
+    PM->>PM: Extract expert trajectories
+    PM->>EU: compute_traj_errors(planner, expert)
+    EU-->>PM: displacement_errors[]
+    PM->>PM: Compute statistics (mean, max, final)
+    PM-->>ME: MetricStatistics
+    
+    ME-->>U: metric_results{}
+    U->>R: save_results_to_json()

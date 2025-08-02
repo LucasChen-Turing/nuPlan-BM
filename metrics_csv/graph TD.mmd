@@ -1,0 +1,15 @@
+graph TD
+    A[Mock SimulationHistory] --> B[MetricsEngine]
+    B --> C[Planner-Expert Metrics]
+    C --> D[MetricStatistics Results]
+    D --> E[JSON Export & Analysis]
+    
+    A1[MockScenario] --> A
+    A2[MockTrajectory] --> A
+    A3[Expert Trajectory] --> A
+    
+    C1[Average L2 Error] --> C
+    C2[Average Heading Error] --> C
+    C3[Final L2 Error] --> C
+    C4[Final Heading Error] --> C
+    C5[Miss Rate] --> C
