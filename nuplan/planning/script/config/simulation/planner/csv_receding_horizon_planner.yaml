@@ -1,0 +1,12 @@
+csv_receding_horizon_planner:
+  _target_: offline_evaluation.planners.csv_receding_horizon_planner.CSVRecedingHorizonPlanner
+  _convert_: 'all'
+  # CSV file path - use longer scenario horizons for Challenge 1
+  csv_file_path: "/home/chen/nuplan-devkit/offline_evaluation/data/longer_scenario_horizons.csv"
+  # Challenge 1 requirements - minimum 6s horizon and 1Hz frequency
+  num_poses: 120  # 6 seconds * 20Hz = 120 poses minimum for Challenge 1
+  future_time_horizon: 6.0  # Must be >= 6.0 for Challenge 1
+  planning_frequency_hz: 1.0  # Challenge 1 requires 1Hz planning frequency
+  # CSV format parameters
+  scenario_id_column: "scenario_id"
+  trajectory_column_prefix: "ego_"

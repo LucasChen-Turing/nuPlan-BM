@@ -1,0 +1,147 @@
+hydra:
+  run:
+    dir: ${output_dir}
+  sweep:
+    dir: multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.num}
+  launcher:
+    _target_: hydra._internal.core_plugins.basic_launcher.BasicLauncher
+  sweeper:
+    _target_: hydra._internal.core_plugins.basic_sweeper.BasicSweeper
+    max_batch_size: null
+  help:
+    app_name: ${hydra.job.name}
+    header: '${hydra.help.app_name} is powered by Hydra.
+
+      '
+    footer: 'Powered by Hydra (https://hydra.cc)
+
+      Use --hydra-help to view Hydra specific help
+
+      '
+    template: '${hydra.help.header}
+
+      == Configuration groups ==
+
+      Compose your configuration from those groups (group=option)
+
+
+      $APP_CONFIG_GROUPS
+
+
+      == Config ==
+
+      Override anything in the config (foo.bar=value)
+
+
+      $CONFIG
+
+
+      ${hydra.help.footer}
+
+      '
+  hydra_help:
+    template: 'Hydra (${hydra.runtime.version})
+
+      See https://hydra.cc for more info.
+
+
+      == Flags ==
+
+      $FLAGS_HELP
+
+
+      == Configuration groups ==
+
+      Compose your configuration from those groups (For example, append hydra/job_logging=disabled
+      to command line)
+
+
+      $HYDRA_CONFIG_GROUPS
+
+
+      Use ''--cfg hydra'' to Show the Hydra config.
+
+      '
+    hydra_help: ???
+  hydra_logging:
+    version: 1
+    root: null
+    disable_existing_loggers: false
+  job_logging:
+    version: 1
+    root: null
+    disable_existing_loggers: false
+  env: {}
+  searchpath:
+  - pkg://nuplan.planning.script.config.common
+  - pkg://nuplan.planning.script.experiments
+  callbacks: {}
+  output_subdir: ${output_dir}/code/hydra
+  overrides:
+    hydra: []
+    task:
+    - experiment=open_loop_boxes
+    - planner=csv_receding_horizon_planner
+    - ego_controller=log_play_back_controller
+    - observation=box_observation
+    - scenario_builder=nuplan_mini
+    - scenario_filter=simple_test_scenarios
+    - scenario_builder.data_root=/home/chen/nuplan-devkit/data/cache/mini_working
+    - worker=sequential
+    - scenario_filter.scenario_types=[low_magnitude_speed]
+    - scenario_filter.limit_total_scenarios=1
+  job:
+    name: run_simulation
+    override_dirname: ego_controller=log_play_back_controller,experiment=open_loop_boxes,observation=box_observation,planner=csv_receding_horizon_planner,scenario_builder.data_root=/home/chen/nuplan-devkit/data/cache/mini_working,scenario_builder=nuplan_mini,scenario_filter.limit_total_scenarios=1,scenario_filter.scenario_types=[low_magnitude_speed],scenario_filter=simple_test_scenarios,worker=sequential
+    id: ???
+    num: ???
+    config_name: default_simulation
+    env_set: {}
+    env_copy: []
+    config:
+      override_dirname:
+        kv_sep: '='
+        item_sep: ','
+        exclude_keys: []
+  runtime:
+    version: 1.1.0.rc1
+    cwd: /home/chen/nuplan-devkit
+    config_sources:
+    - path: hydra.conf
+      schema: pkg
+      provider: hydra
+    - path: /home/chen/nuplan-devkit/nuplan/planning/script/config/simulation
+      schema: file
+      provider: main
+    - path: nuplan.planning.script.config.common
+      schema: pkg
+      provider: hydra.searchpath in main
+    - path: nuplan.planning.script.experiments
+      schema: pkg
+      provider: hydra.searchpath in main
+    - path: ''
+      schema: structured
+      provider: schema
+    choices:
+      simulation_time_controller: step_simulation_time_controller
+      planner: csv_receding_horizon_planner
+      ego_controller: log_play_back_controller
+      observation: box_observation
+      splitter: nuplan
+      worker: sequential
+      model: null
+      scenario_filter: simple_test_scenarios
+      scenario_builder: nuplan_mini
+      scenario_builder/scenario_mapping: nuplan_scenario_mapping
+      scenario_builder/vehicle_parameters: nuplan_vehicle_parameters
+      hydra/env: default
+      hydra/callbacks: null
+      hydra/job_logging: none
+      hydra/hydra_logging: none
+      hydra/hydra_help: default
+      hydra/help: default
+      hydra/sweeper: basic
+      hydra/launcher: basic
+      hydra/output: default
+  verbose: false

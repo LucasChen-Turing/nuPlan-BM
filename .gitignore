@@ -32,3 +32,13 @@ _ext
 .pytest_cache/*
 docs/_build/
 docs/generated/
+# Ignore benchmark results
+planner_benchmark/results/
+
+maps/*
+
+# Ignore data cache
+data/cache/
+
+# Ignore cache exports
+cache/mini/csv_exports/

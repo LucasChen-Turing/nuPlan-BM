@@ -1,0 +1,258 @@
+{
+  "planner_expert_average_l2_error": [
+    {
+      "metric_score": 0.9436173226023995,
+      "category": "accuracy",
+      "statistics": [
+        {
+          "name": "planner_expert_ADE_horizon_3",
+          "value": 0.10538705121934724,
+          "unit": "meter",
+          "type": "MEAN"
+        },
+        {
+          "name": "planner_expert_ADE_horizon_5",
+          "value": 0.10919685418842054,
+          "unit": "meter",
+          "type": "MEAN"
+        },
+        {
+          "name": "planner_expert_ADE_horizon_8",
+          "value": 0.12371215897783525,
+          "unit": "meter",
+          "type": "MEAN"
+        },
+        {
+          "name": "planner_expert_average_l2_error",
+          "value": 1.0,
+          "unit": "boolean",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "avg_planner_expert_ADE_over_all_horizons",
+          "value": 0.112765354795201,
+          "unit": "meter",
+          "type": "MEAN"
+        }
+      ],
+      "time_series": {
+        "unit": "avg_planner_expert_ADE_over_all_horizons [meter]",
+        "timestamps": [
+          0,
+          1000000,
+          2000000,
+          3000000,
+          4000000
+        ],
+        "values": [
+          0.10048211280912794,
+          0.17915579531385065,
+          0.09975646779572071,
+          0.08102689369207887,
+          0.10340550436522689
+        ],
+        "num_samples": 5
+      }
+    }
+  ],
+  "planner_expert_average_heading_error": [
+    {
+      "metric_score": 0.9725443555244463,
+      "category": "accuracy",
+      "statistics": [
+        {
+          "name": "planner_expert_AHE_horizon_3",
+          "value": 0.008349107161196568,
+          "unit": "radian",
+          "type": "MEAN"
+        },
+        {
+          "name": "planner_expert_AHE_horizon_5",
+          "value": 0.007587636254659191,
+          "unit": "radian",
+          "type": "MEAN"
+        },
+        {
+          "name": "planner_expert_AHE_horizon_8",
+          "value": 0.008773336612142612,
+          "unit": "radian",
+          "type": "MEAN"
+        },
+        {
+          "name": "planner_expert_average_heading_error",
+          "value": 1.0,
+          "unit": "boolean",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "avg_planner_expert_AHE_over_all_horizons",
+          "value": 0.008236693342666124,
+          "unit": "radian",
+          "type": "MEAN"
+        }
+      ],
+      "time_series": {
+        "unit": "avg_planner_expert_AHE_over_all_horizons [radian]",
+        "timestamps": [
+          0,
+          1000000,
+          2000000,
+          3000000,
+          4000000
+        ],
+        "values": [
+          0.006918958072072111,
+          0.014319477794052538,
+          0.0050656126675323815,
+          0.004848434146584927,
+          0.010030984033088658
+        ],
+        "num_samples": 5
+      }
+    }
+  ],
+  "planner_expert_final_l2_error": [
+    {
+      "metric_score": 0.9651195651779664,
+      "category": "accuracy",
+      "statistics": [
+        {
+          "name": "planner_expert_FDE_horizon_3",
+          "value": 0.1213629686033502,
+          "unit": "meter",
+          "type": "MEAN"
+        },
+        {
+          "name": "planner_expert_FDE_horizon_5",
+          "value": 0.07795208105544375,
+          "unit": "meter",
+          "type": "MEAN"
+        },
+        {
+          "name": "planner_expert_FDE_horizon_8",
+          "value": 0.11460886373950856,
+          "unit": "meter",
+          "type": "MEAN"
+        },
+        {
+          "name": "planner_expert_final_l2_error",
+          "value": 1.0,
+          "unit": "boolean",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "avg_planner_expert_FDE_over_all_horizons",
+          "value": 0.10464130446610084,
+          "unit": "meter",
+          "type": "MEAN"
+        }
+      ],
+      "time_series": {
+        "unit": "avg_planner_expert_FDE_over_all_horizons [meter]",
+        "timestamps": [
+          0,
+          1000000,
+          2000000,
+          3000000,
+          4000000
+        ],
+        "values": [
+          0.06824287898313887,
+          0.21261891900052035,
+          0.11354967904182196,
+          0.05771670068610704,
+          0.07107834461891599
+        ],
+        "num_samples": 5
+      }
+    }
+  ],
+  "planner_expert_final_heading_error": [
+    {
+      "metric_score": 0.9879947723030107,
+      "category": "accuracy",
+      "statistics": [
+        {
+          "name": "planner_expert_FHE_horizon_3",
+          "value": 0.004960073549379551,
+          "unit": "radian",
+          "type": "MEAN"
+        },
+        {
+          "name": "planner_expert_FHE_horizon_5",
+          "value": 0.006114851020882828,
+          "unit": "radian",
+          "type": "MEAN"
+        },
+        {
+          "name": "planner_expert_FHE_horizon_8",
+          "value": 0.006932916975221559,
+          "unit": "radian",
+          "type": "MEAN"
+        },
+        {
+          "name": "planner_expert_final_heading_error",
+          "value": 1.0,
+          "unit": "boolean",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "avg_planner_expert_FHE_over_all_horizons",
+          "value": 0.006002613848494646,
+          "unit": "radian",
+          "type": "MEAN"
+        }
+      ],
+      "time_series": {
+        "unit": "avg_planner_expert_FHE_over_all_horizons [radian]",
+        "timestamps": [
+          0,
+          1000000,
+          2000000,
+          3000000,
+          4000000
+        ],
+        "values": [
+          0.003706464492257607,
+          0.007972607613135008,
+          0.004492777809723236,
+          0.005103383077182351,
+          0.008737836250175027
+        ],
+        "num_samples": 5
+      }
+    }
+  ],
+  "planner_miss_rate": [
+    {
+      "metric_score": 1.0,
+      "category": "accuracy",
+      "statistics": [
+        {
+          "name": "planner_miss_rate_horizon_3",
+          "value": 0.0,
+          "unit": "ratio",
+          "type": "RATIO"
+        },
+        {
+          "name": "planner_miss_rate_horizon_5",
+          "value": 0.0,
+          "unit": "ratio",
+          "type": "RATIO"
+        },
+        {
+          "name": "planner_miss_rate_horizon_8",
+          "value": 0.0,
+          "unit": "ratio",
+          "type": "RATIO"
+        },
+        {
+          "name": "planner_miss_rate",
+          "value": 1.0,
+          "unit": "boolean",
+          "type": "BOOLEAN"
+        }
+      ]
+    }
+  ]
+}

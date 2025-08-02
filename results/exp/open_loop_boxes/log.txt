@@ -1,0 +1,732 @@
+2025-08-01 21:56:54,119 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/worker_pool_builder.py:19}  Building WorkerPool...
+2025-08-01 21:56:54,120 INFO {/home/chen/nuplan-devkit/nuplan/planning/utils/multithreading/worker_pool.py:101}  Worker: Sequential
+2025-08-01 21:56:54,120 INFO {/home/chen/nuplan-devkit/nuplan/planning/utils/multithreading/worker_pool.py:102}  Number of nodes: 1
+Number of CPUs per node: 1
+Number of GPUs per node: 0
+Number of threads across all nodes: 1
+2025-08-01 21:56:54,120 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/worker_pool_builder.py:27}  Building WorkerPool...DONE!
+2025-08-01 21:56:54,120 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:32}  Building experiment folders...
+2025-08-01 21:56:54,121 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:35}  
+
+	Folder where all results are stored: /home/chen/nuplan-devkit/results/exp/open_loop_boxes
+
+2025-08-01 21:56:54,123 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:70}  Building experiment folders...DONE!
+2025-08-01 21:56:54,123 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_callback_builder.py:52}  Building AbstractCallback...
+2025-08-01 21:56:54,123 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_callback_builder.py:68}  Building AbstractCallback: 0...DONE!
+2025-08-01 21:56:54,123 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:47}  Building simulations...
+2025-08-01 21:56:54,123 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:53}  Extracting scenarios...
+2025-08-01 21:56:54,124 INFO {/home/chen/nuplan-devkit/nuplan/common/utils/distributed_scenario_filter.py:83}  Building Scenarios in mode DistributedMode.SINGLE_NODE
+2025-08-01 21:56:54,124 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_building_builder.py:18}  Building AbstractScenarioBuilder...
+2025-08-01 21:56:54,137 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_building_builder.py:21}  Building AbstractScenarioBuilder...DONE!
+2025-08-01 21:56:54,138 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_filter_builder.py:35}  Building ScenarioFilter...
+2025-08-01 21:56:54,139 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_filter_builder.py:44}  Building ScenarioFilter...DONE!
+2025-08-01 21:56:55,289 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:74}  Building metric engines...
+2025-08-01 21:56:55,292 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:76}  Building metric engines...DONE
+2025-08-01 21:56:55,292 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:80}  Building simulations from 1 scenarios...
+2025-08-01 21:56:55,300 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:108}  Loaded trajectory data: 15 rows
+2025-08-01 21:57:34,849 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/worker_pool_builder.py:19}  Building WorkerPool...
+2025-08-01 21:57:34,850 INFO {/home/chen/nuplan-devkit/nuplan/planning/utils/multithreading/worker_pool.py:101}  Worker: Sequential
+2025-08-01 21:57:34,850 INFO {/home/chen/nuplan-devkit/nuplan/planning/utils/multithreading/worker_pool.py:102}  Number of nodes: 1
+Number of CPUs per node: 1
+Number of GPUs per node: 0
+Number of threads across all nodes: 1
+2025-08-01 21:57:34,850 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/worker_pool_builder.py:27}  Building WorkerPool...DONE!
+2025-08-01 21:57:34,851 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:32}  Building experiment folders...
+2025-08-01 21:57:34,851 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:35}  
+
+	Folder where all results are stored: /home/chen/nuplan-devkit/results/exp/open_loop_boxes
+
+2025-08-01 21:57:34,853 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:70}  Building experiment folders...DONE!
+2025-08-01 21:57:34,853 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_callback_builder.py:52}  Building AbstractCallback...
+2025-08-01 21:57:34,853 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_callback_builder.py:68}  Building AbstractCallback: 0...DONE!
+2025-08-01 21:57:34,853 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:47}  Building simulations...
+2025-08-01 21:57:34,853 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:53}  Extracting scenarios...
+2025-08-01 21:57:34,854 INFO {/home/chen/nuplan-devkit/nuplan/common/utils/distributed_scenario_filter.py:83}  Building Scenarios in mode DistributedMode.SINGLE_NODE
+2025-08-01 21:57:34,854 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_building_builder.py:18}  Building AbstractScenarioBuilder...
+2025-08-01 21:57:34,864 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_building_builder.py:21}  Building AbstractScenarioBuilder...DONE!
+2025-08-01 21:57:34,864 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_filter_builder.py:35}  Building ScenarioFilter...
+2025-08-01 21:57:34,865 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_filter_builder.py:44}  Building ScenarioFilter...DONE!
+2025-08-01 21:57:36,008 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:74}  Building metric engines...
+2025-08-01 21:57:36,011 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:76}  Building metric engines...DONE
+2025-08-01 21:57:36,011 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:80}  Building simulations from 1 scenarios...
+2025-08-01 21:57:36,018 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:108}  Loaded trajectory data: 15 rows
+2025-08-01 21:57:36,019 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:142}  Loaded 1 unique scenarios
+2025-08-01 21:57:36,019 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:99}  Initialized receding horizon planner: 8.0s horizon, 120 poses, 1.0Hz frequency
+2025-08-01 21:57:36,251 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:133}  Building simulations...DONE!
+2025-08-01 21:57:36,251 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/run_simulation.py:78}  Running simulation...
+2025-08-01 21:57:36,251 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:138}  Executing runners...
+2025-08-01 21:57:36,251 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:82}  Starting 1 simulations using Sequential!
+2025-08-01 21:57:36,298 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:197}  No matching scenario found for token b48de43a8b0f588c, using first available: scenario_00002b2436735b10
+2025-08-01 21:57:36,298 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:155}  Set current scenario: scenario_00002b2436735b10 (15 points)
+2025-08-01 21:57:39,408 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:127}  Number of successful simulations: 1
+2025-08-01 21:57:39,408 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:128}  Number of failed simulations: 0
+2025-08-01 21:57:39,408 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:147}  Finished executing runners!
+2025-08-01 21:57:39,417 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:74}  Saved runner reports to /home/chen/nuplan-devkit/results/exp/open_loop_boxes/runner_report.parquet
+2025-08-01 21:57:39,417 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/time_callback.py:27}  Simulation duration: 00:00:04 [HH:MM:SS]
+2025-08-01 21:57:39,436 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_file_callback.py:79}  Metric files integration: 00:00:00 [HH:MM:SS]
+2025-08-01 21:57:39,465 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_aggregator_callback.py:58}  Running metric aggregator: weighted_average_metric_aggregator
+2025-08-01 21:57:39,474 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_aggregator_callback.py:69}  Metric aggregator: 00:00:00 [HH:MM:SS]
+2025-08-01 21:57:40,891 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_summary_callback.py:344}  Metric summary: 00:00:01 [HH:MM:SS]
+2025-08-01 21:57:40,892 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/run_simulation.py:80}  Finished running simulation!
+2025-08-01 22:08:28,413 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/worker_pool_builder.py:19}  Building WorkerPool...
+2025-08-01 22:08:28,414 INFO {/home/chen/nuplan-devkit/nuplan/planning/utils/multithreading/worker_pool.py:101}  Worker: Sequential
+2025-08-01 22:08:28,414 INFO {/home/chen/nuplan-devkit/nuplan/planning/utils/multithreading/worker_pool.py:102}  Number of nodes: 1
+Number of CPUs per node: 1
+Number of GPUs per node: 0
+Number of threads across all nodes: 1
+2025-08-01 22:08:28,414 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/worker_pool_builder.py:27}  Building WorkerPool...DONE!
+2025-08-01 22:08:28,414 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:32}  Building experiment folders...
+2025-08-01 22:08:28,414 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:35}  
+
+	Folder where all results are stored: /home/chen/nuplan-devkit/results/exp/open_loop_boxes
+
+2025-08-01 22:08:28,417 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:70}  Building experiment folders...DONE!
+2025-08-01 22:08:28,417 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_callback_builder.py:52}  Building AbstractCallback...
+2025-08-01 22:08:28,417 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_callback_builder.py:68}  Building AbstractCallback: 0...DONE!
+2025-08-01 22:08:28,417 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:47}  Building simulations...
+2025-08-01 22:08:28,417 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:53}  Extracting scenarios...
+2025-08-01 22:08:28,418 INFO {/home/chen/nuplan-devkit/nuplan/common/utils/distributed_scenario_filter.py:83}  Building Scenarios in mode DistributedMode.SINGLE_NODE
+2025-08-01 22:08:28,418 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_building_builder.py:18}  Building AbstractScenarioBuilder...
+2025-08-01 22:08:28,426 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_building_builder.py:21}  Building AbstractScenarioBuilder...DONE!
+2025-08-01 22:08:28,426 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_filter_builder.py:35}  Building ScenarioFilter...
+2025-08-01 22:08:28,427 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_filter_builder.py:44}  Building ScenarioFilter...DONE!
+2025-08-01 22:08:29,625 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:74}  Building metric engines...
+2025-08-01 22:08:29,628 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:76}  Building metric engines...DONE
+2025-08-01 22:08:29,628 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:80}  Building simulations from 1 scenarios...
+2025-08-01 22:08:29,636 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:108}  Loaded trajectory data: 15 rows
+2025-08-01 22:08:29,638 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:142}  Loaded 1 unique scenarios
+2025-08-01 22:08:29,638 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:99}  Initialized receding horizon planner: 8.0s horizon, 120 poses, 1.0Hz frequency
+2025-08-01 22:08:29,873 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:133}  Building simulations...DONE!
+2025-08-01 22:08:29,873 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/run_simulation.py:78}  Running simulation...
+2025-08-01 22:08:29,873 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:138}  Executing runners...
+2025-08-01 22:08:29,873 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:82}  Starting 1 simulations using Sequential!
+2025-08-01 22:08:29,919 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:197}  No matching scenario found for token b48de43a8b0f588c, using first available: scenario_00002b2436735b10
+2025-08-01 22:08:29,919 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:155}  Set current scenario: scenario_00002b2436735b10 (15 points)
+2025-08-01 22:08:29,924 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:29,937 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:29,948 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:29,960 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:29,972 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,126 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,140 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,152 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,165 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,178 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,190 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,202 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,216 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,231 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,245 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,257 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,271 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,283 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,296 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,308 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,321 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,334 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,347 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,359 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,372 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,384 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,397 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,410 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,422 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,435 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,449 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,462 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,475 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,488 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,501 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,513 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,526 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,540 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,552 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,564 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,576 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,589 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,600 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,611 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,623 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,636 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,648 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,660 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,673 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,685 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,697 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,708 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,720 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,731 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,744 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,756 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,768 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,781 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,792 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,803 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,815 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,826 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,838 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,850 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,861 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,872 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,884 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,895 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,906 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,917 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,929 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,940 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,951 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,962 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,974 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,986 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:30,999 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,186 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,198 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,209 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,221 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,232 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,244 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,256 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,267 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,278 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,290 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,301 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,313 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,324 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,337 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,348 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,360 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,372 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,383 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,395 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,406 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,417 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,429 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,442 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,454 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,466 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,477 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,489 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,500 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,514 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,528 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,542 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,557 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,570 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,582 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,594 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,606 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,618 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,630 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,642 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,654 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,666 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,677 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,689 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,701 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,713 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,725 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,737 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,748 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,760 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,771 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,782 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,793 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,805 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,816 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,828 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,841 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,853 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,864 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,875 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,887 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,898 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,910 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,922 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,934 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,946 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,957 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,969 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,981 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:31,993 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:32,004 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:32,015 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:32,026 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 119 < Challenge 1 minimum 120
+2025-08-01 22:08:33,060 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:127}  Number of successful simulations: 1
+2025-08-01 22:08:33,060 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:128}  Number of failed simulations: 0
+2025-08-01 22:08:33,060 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:147}  Finished executing runners!
+2025-08-01 22:08:33,066 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:74}  Saved runner reports to /home/chen/nuplan-devkit/results/exp/open_loop_boxes/runner_report.parquet
+2025-08-01 22:08:33,066 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/time_callback.py:27}  Simulation duration: 00:00:04 [HH:MM:SS]
+2025-08-01 22:08:33,081 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_file_callback.py:79}  Metric files integration: 00:00:00 [HH:MM:SS]
+2025-08-01 22:08:33,103 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_aggregator_callback.py:58}  Running metric aggregator: weighted_average_metric_aggregator
+2025-08-01 22:08:33,107 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_aggregator_callback.py:69}  Metric aggregator: 00:00:00 [HH:MM:SS]
+2025-08-01 22:08:34,666 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_summary_callback.py:344}  Metric summary: 00:00:01 [HH:MM:SS]
+2025-08-01 22:08:34,666 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/run_simulation.py:80}  Finished running simulation!
+2025-08-02 01:50:26,906 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/worker_pool_builder.py:19}  Building WorkerPool...
+2025-08-02 01:50:26,907 INFO {/home/chen/nuplan-devkit/nuplan/planning/utils/multithreading/worker_pool.py:101}  Worker: Sequential
+2025-08-02 01:50:26,907 INFO {/home/chen/nuplan-devkit/nuplan/planning/utils/multithreading/worker_pool.py:102}  Number of nodes: 1
+Number of CPUs per node: 1
+Number of GPUs per node: 0
+Number of threads across all nodes: 1
+2025-08-02 01:50:26,907 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/worker_pool_builder.py:27}  Building WorkerPool...DONE!
+2025-08-02 01:50:26,907 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:32}  Building experiment folders...
+2025-08-02 01:50:26,907 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:35}  
+
+	Folder where all results are stored: /home/chen/nuplan-devkit/results/exp/open_loop_boxes
+
+2025-08-02 01:50:26,910 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:70}  Building experiment folders...DONE!
+2025-08-02 01:50:26,910 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_callback_builder.py:52}  Building AbstractCallback...
+2025-08-02 01:50:26,911 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_callback_builder.py:68}  Building AbstractCallback: 0...DONE!
+2025-08-02 01:50:26,911 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:47}  Building simulations...
+2025-08-02 01:50:26,911 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:53}  Extracting scenarios...
+2025-08-02 01:50:26,911 INFO {/home/chen/nuplan-devkit/nuplan/common/utils/distributed_scenario_filter.py:83}  Building Scenarios in mode DistributedMode.SINGLE_NODE
+2025-08-02 01:50:26,911 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_building_builder.py:18}  Building AbstractScenarioBuilder...
+2025-08-02 01:50:26,923 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_building_builder.py:21}  Building AbstractScenarioBuilder...DONE!
+2025-08-02 01:50:26,923 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_filter_builder.py:35}  Building ScenarioFilter...
+2025-08-02 01:50:26,924 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_filter_builder.py:44}  Building ScenarioFilter...DONE!
+2025-08-02 01:50:27,457 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:74}  Building metric engines...
+2025-08-02 01:50:27,460 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:76}  Building metric engines...DONE
+2025-08-02 01:50:27,460 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:80}  Building simulations from 1 scenarios...
+2025-08-02 01:50:27,468 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:108}  Loaded trajectory data: 29 rows
+2025-08-02 01:50:27,469 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:142}  Loaded 1 unique scenarios
+2025-08-02 01:50:27,469 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:99}  Initialized receding horizon planner: 6.0s horizon, 120 poses, 1.0Hz frequency
+2025-08-02 01:50:27,703 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:133}  Building simulations...DONE!
+2025-08-02 01:50:27,703 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/run_simulation.py:78}  Running simulation...
+2025-08-02 01:50:27,703 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:138}  Executing runners...
+2025-08-02 01:50:27,703 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:82}  Starting 1 simulations using Sequential!
+2025-08-02 01:50:27,879 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:197}  No matching scenario found for token 262a4b7a1f2c5ab6, using first available: scenario_07ed4aa3c20a594a
+2025-08-02 01:50:27,879 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:155}  Set current scenario: scenario_07ed4aa3c20a594a (29 points)
+2025-08-02 01:50:27,884 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:27,897 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:27,909 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:27,923 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:27,935 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:27,947 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:27,959 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:27,972 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:27,984 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:27,996 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,009 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,021 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,035 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,048 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,061 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,072 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,085 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,098 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,111 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,125 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,138 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,150 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,163 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,175 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,188 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,200 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,212 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,224 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,237 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,249 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,261 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,274 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,288 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,301 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,313 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,327 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,339 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,351 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,362 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,375 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,387 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,399 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,412 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,424 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,436 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,448 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,460 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,473 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,484 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,496 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,509 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,522 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,536 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,549 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,563 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,577 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,590 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,603 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,615 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,628 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,641 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,654 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,667 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,679 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,692 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,704 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,716 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,727 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,739 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,752 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,764 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,777 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,790 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,802 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,815 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,827 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,840 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,852 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,864 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:28,876 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,049 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,062 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,074 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,086 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,099 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,112 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,125 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,138 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,150 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,162 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,175 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,187 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,199 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,211 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,223 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,236 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,249 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,262 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,275 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,288 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,300 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,313 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,325 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,337 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,350 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,364 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,377 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,389 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,402 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,414 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,427 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,439 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,452 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,464 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,477 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,491 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,504 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,517 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,530 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,543 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,555 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,569 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,582 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,596 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,609 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,622 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,635 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,648 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,661 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,673 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,685 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,698 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,711 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,725 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,739 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,752 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,765 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,778 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,791 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,804 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,817 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,830 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,844 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,857 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,870 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,883 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,895 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,909 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:29,922 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:50:30,921 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:127}  Number of successful simulations: 1
+2025-08-02 01:50:30,921 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:128}  Number of failed simulations: 0
+2025-08-02 01:50:30,922 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:147}  Finished executing runners!
+2025-08-02 01:50:30,929 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:74}  Saved runner reports to /home/chen/nuplan-devkit/results/exp/open_loop_boxes/runner_report.parquet
+2025-08-02 01:50:30,929 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/time_callback.py:27}  Simulation duration: 00:00:04 [HH:MM:SS]
+2025-08-02 01:50:30,948 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_file_callback.py:79}  Metric files integration: 00:00:00 [HH:MM:SS]
+2025-08-02 01:50:30,978 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_aggregator_callback.py:58}  Running metric aggregator: weighted_average_metric_aggregator
+2025-08-02 01:50:30,985 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_aggregator_callback.py:69}  Metric aggregator: 00:00:00 [HH:MM:SS]
+2025-08-02 01:50:32,538 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_summary_callback.py:344}  Metric summary: 00:00:01 [HH:MM:SS]
+2025-08-02 01:50:32,538 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/run_simulation.py:80}  Finished running simulation!
+2025-08-02 01:52:11,841 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/worker_pool_builder.py:19}  Building WorkerPool...
+2025-08-02 01:52:11,842 INFO {/home/chen/nuplan-devkit/nuplan/planning/utils/multithreading/worker_pool.py:101}  Worker: Sequential
+2025-08-02 01:52:11,842 INFO {/home/chen/nuplan-devkit/nuplan/planning/utils/multithreading/worker_pool.py:102}  Number of nodes: 1
+Number of CPUs per node: 1
+Number of GPUs per node: 0
+Number of threads across all nodes: 1
+2025-08-02 01:52:11,842 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/worker_pool_builder.py:27}  Building WorkerPool...DONE!
+2025-08-02 01:52:11,842 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:32}  Building experiment folders...
+2025-08-02 01:52:11,842 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:35}  
+
+	Folder where all results are stored: /home/chen/nuplan-devkit/results/exp/open_loop_boxes
+
+2025-08-02 01:52:11,844 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:70}  Building experiment folders...DONE!
+2025-08-02 01:52:11,845 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_callback_builder.py:52}  Building AbstractCallback...
+2025-08-02 01:52:11,845 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_callback_builder.py:68}  Building AbstractCallback: 0...DONE!
+2025-08-02 01:52:11,845 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:47}  Building simulations...
+2025-08-02 01:52:11,845 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:53}  Extracting scenarios...
+2025-08-02 01:52:11,845 INFO {/home/chen/nuplan-devkit/nuplan/common/utils/distributed_scenario_filter.py:83}  Building Scenarios in mode DistributedMode.SINGLE_NODE
+2025-08-02 01:52:11,845 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_building_builder.py:18}  Building AbstractScenarioBuilder...
+2025-08-02 01:52:11,853 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_building_builder.py:21}  Building AbstractScenarioBuilder...DONE!
+2025-08-02 01:52:11,854 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_filter_builder.py:35}  Building ScenarioFilter...
+2025-08-02 01:52:11,854 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_filter_builder.py:44}  Building ScenarioFilter...DONE!
+2025-08-02 01:52:12,383 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:74}  Building metric engines...
+2025-08-02 01:52:12,386 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:76}  Building metric engines...DONE
+2025-08-02 01:52:12,386 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:80}  Building simulations from 1 scenarios...
+2025-08-02 01:52:12,393 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:108}  Loaded trajectory data: 29 rows
+2025-08-02 01:52:12,394 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:142}  Loaded 1 unique scenarios
+2025-08-02 01:52:12,394 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:99}  Initialized receding horizon planner: 6.0s horizon, 120 poses, 1.0Hz frequency
+2025-08-02 01:52:12,630 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:133}  Building simulations...DONE!
+2025-08-02 01:52:12,630 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/run_simulation.py:78}  Running simulation...
+2025-08-02 01:52:12,630 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:138}  Executing runners...
+2025-08-02 01:52:12,630 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:82}  Starting 1 simulations using Sequential!
+2025-08-02 01:52:12,798 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:197}  No matching scenario found for token 262a4b7a1f2c5ab6, using first available: scenario_07ed4aa3c20a594a
+2025-08-02 01:52:12,798 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:155}  Set current scenario: scenario_07ed4aa3c20a594a (29 points)
+2025-08-02 01:52:12,804 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:12,817 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:12,829 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:12,840 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:12,852 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:12,864 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:12,876 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:12,888 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:12,900 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:12,911 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:12,923 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:12,934 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:12,945 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:12,958 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:12,970 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:12,981 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:12,994 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,006 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,017 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,029 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,041 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,052 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,064 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,075 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,087 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,098 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,110 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,123 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,135 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,146 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,157 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,169 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,181 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,192 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,203 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,215 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,227 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,239 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,251 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,263 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,274 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,286 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,297 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,309 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,320 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,331 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,343 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,355 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,368 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,379 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,391 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,403 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,415 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,427 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,439 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,450 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,462 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,473 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,485 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,496 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,508 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,519 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,531 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,542 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,553 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,565 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,576 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,589 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,601 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,612 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,624 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,636 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,647 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,659 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,670 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,682 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,693 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,705 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,717 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,729 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,902 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,915 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,926 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,938 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,950 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,962 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,974 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,986 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:13,998 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,010 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,022 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,034 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,045 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,057 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,069 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,081 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,093 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,104 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,116 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,128 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,139 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,151 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,163 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,175 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,187 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,200 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,212 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,223 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,235 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,247 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,259 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,271 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,282 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,294 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,306 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,319 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,331 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,343 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,355 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,367 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,379 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,391 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,403 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,414 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,427 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,439 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,451 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,464 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,476 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,487 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,500 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,511 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,523 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,535 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,548 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,560 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,573 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,585 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,597 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,609 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,621 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,633 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,645 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,657 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,674 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,693 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,709 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,723 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:14,735 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:318}  Horizon states 101 < Challenge 1 minimum 120
+2025-08-02 01:52:15,687 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:127}  Number of successful simulations: 1
+2025-08-02 01:52:15,687 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:128}  Number of failed simulations: 0
+2025-08-02 01:52:15,687 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:147}  Finished executing runners!
+2025-08-02 01:52:15,695 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:74}  Saved runner reports to /home/chen/nuplan-devkit/results/exp/open_loop_boxes/runner_report.parquet
+2025-08-02 01:52:15,695 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/time_callback.py:27}  Simulation duration: 00:00:03 [HH:MM:SS]
+2025-08-02 01:52:15,713 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_file_callback.py:79}  Metric files integration: 00:00:00 [HH:MM:SS]
+2025-08-02 01:52:15,737 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_aggregator_callback.py:58}  Running metric aggregator: weighted_average_metric_aggregator
+2025-08-02 01:52:15,741 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_aggregator_callback.py:69}  Metric aggregator: 00:00:00 [HH:MM:SS]
+2025-08-02 01:52:17,751 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_summary_callback.py:344}  Metric summary: 00:00:02 [HH:MM:SS]
+2025-08-02 01:52:17,752 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/run_simulation.py:80}  Finished running simulation!
+2025-08-02 01:52:57,513 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/worker_pool_builder.py:19}  Building WorkerPool...
+2025-08-02 01:52:57,514 INFO {/home/chen/nuplan-devkit/nuplan/planning/utils/multithreading/worker_pool.py:101}  Worker: Sequential
+2025-08-02 01:52:57,514 INFO {/home/chen/nuplan-devkit/nuplan/planning/utils/multithreading/worker_pool.py:102}  Number of nodes: 1
+Number of CPUs per node: 1
+Number of GPUs per node: 0
+Number of threads across all nodes: 1
+2025-08-02 01:52:57,514 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/worker_pool_builder.py:27}  Building WorkerPool...DONE!
+2025-08-02 01:52:57,514 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:32}  Building experiment folders...
+2025-08-02 01:52:57,514 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:35}  
+
+	Folder where all results are stored: /home/chen/nuplan-devkit/results/exp/open_loop_boxes
+
+2025-08-02 01:52:57,517 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:70}  Building experiment folders...DONE!
+2025-08-02 01:52:57,517 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_callback_builder.py:52}  Building AbstractCallback...
+2025-08-02 01:52:57,517 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_callback_builder.py:68}  Building AbstractCallback: 0...DONE!
+2025-08-02 01:52:57,517 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:47}  Building simulations...
+2025-08-02 01:52:57,518 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:53}  Extracting scenarios...
+2025-08-02 01:52:57,518 INFO {/home/chen/nuplan-devkit/nuplan/common/utils/distributed_scenario_filter.py:83}  Building Scenarios in mode DistributedMode.SINGLE_NODE
+2025-08-02 01:52:57,518 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_building_builder.py:18}  Building AbstractScenarioBuilder...
+2025-08-02 01:52:57,529 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_building_builder.py:21}  Building AbstractScenarioBuilder...DONE!
+2025-08-02 01:52:57,529 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_filter_builder.py:35}  Building ScenarioFilter...
+2025-08-02 01:52:57,530 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_filter_builder.py:44}  Building ScenarioFilter...DONE!
+2025-08-02 01:52:58,063 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:74}  Building metric engines...
+2025-08-02 01:52:58,066 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:76}  Building metric engines...DONE
+2025-08-02 01:52:58,066 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:80}  Building simulations from 1 scenarios...
+2025-08-02 01:52:58,302 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:133}  Building simulations...DONE!
+2025-08-02 01:52:58,302 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/run_simulation.py:78}  Running simulation...
+2025-08-02 01:52:58,302 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:138}  Executing runners...
+2025-08-02 01:52:58,302 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:82}  Starting 1 simulations using Sequential!
+2025-08-02 01:53:02,206 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:127}  Number of successful simulations: 1
+2025-08-02 01:53:02,206 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:128}  Number of failed simulations: 0
+2025-08-02 01:53:02,206 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:147}  Finished executing runners!
+2025-08-02 01:53:02,212 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:74}  Saved runner reports to /home/chen/nuplan-devkit/results/exp/open_loop_boxes/runner_report.parquet
+2025-08-02 01:53:02,212 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/time_callback.py:27}  Simulation duration: 00:00:04 [HH:MM:SS]
+2025-08-02 01:53:02,222 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_file_callback.py:79}  Metric files integration: 00:00:00 [HH:MM:SS]
+2025-08-02 01:53:02,238 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_aggregator_callback.py:58}  Running metric aggregator: weighted_average_metric_aggregator
+2025-08-02 01:53:02,241 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_aggregator_callback.py:69}  Metric aggregator: 00:00:00 [HH:MM:SS]
+2025-08-02 01:53:04,380 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_summary_callback.py:344}  Metric summary: 00:00:02 [HH:MM:SS]
+2025-08-02 01:53:04,380 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/run_simulation.py:80}  Finished running simulation!
+2025-08-02 02:05:55,594 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/worker_pool_builder.py:19}  Building WorkerPool...
+2025-08-02 02:05:55,594 INFO {/home/chen/nuplan-devkit/nuplan/planning/utils/multithreading/worker_pool.py:101}  Worker: Sequential
+2025-08-02 02:05:55,595 INFO {/home/chen/nuplan-devkit/nuplan/planning/utils/multithreading/worker_pool.py:102}  Number of nodes: 1
+Number of CPUs per node: 1
+Number of GPUs per node: 0
+Number of threads across all nodes: 1
+2025-08-02 02:05:55,595 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/worker_pool_builder.py:27}  Building WorkerPool...DONE!
+2025-08-02 02:05:55,595 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:32}  Building experiment folders...
+2025-08-02 02:05:55,595 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:35}  
+
+	Folder where all results are stored: /home/chen/nuplan-devkit/results/exp/open_loop_boxes
+
+2025-08-02 02:05:55,597 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/folder_builder.py:70}  Building experiment folders...DONE!
+2025-08-02 02:05:55,597 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_callback_builder.py:52}  Building AbstractCallback...
+2025-08-02 02:05:55,598 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_callback_builder.py:68}  Building AbstractCallback: 0...DONE!
+2025-08-02 02:05:55,598 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:47}  Building simulations...
+2025-08-02 02:05:55,598 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:53}  Extracting scenarios...
+2025-08-02 02:05:55,598 INFO {/home/chen/nuplan-devkit/nuplan/common/utils/distributed_scenario_filter.py:83}  Building Scenarios in mode DistributedMode.SINGLE_NODE
+2025-08-02 02:05:55,598 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_building_builder.py:18}  Building AbstractScenarioBuilder...
+2025-08-02 02:05:55,606 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_building_builder.py:21}  Building AbstractScenarioBuilder...DONE!
+2025-08-02 02:05:55,606 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_filter_builder.py:35}  Building ScenarioFilter...
+2025-08-02 02:05:55,607 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/scenario_filter_builder.py:44}  Building ScenarioFilter...DONE!
+2025-08-02 02:05:56,254 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:74}  Building metric engines...
+2025-08-02 02:05:56,258 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:76}  Building metric engines...DONE
+2025-08-02 02:05:56,258 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:80}  Building simulations from 1 scenarios...
+2025-08-02 02:05:56,266 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:108}  Loaded trajectory data: 29 rows
+2025-08-02 02:05:56,268 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:142}  Loaded 1 unique scenarios
+2025-08-02 02:05:56,268 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:99}  Initialized receding horizon planner: 6.0s horizon, 120 poses, 1.0Hz frequency
+2025-08-02 02:05:56,550 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/builders/simulation_builder.py:133}  Building simulations...DONE!
+2025-08-02 02:05:56,550 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/run_simulation.py:78}  Running simulation...
+2025-08-02 02:05:56,550 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:138}  Executing runners...
+2025-08-02 02:05:56,551 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:82}  Starting 1 simulations using Sequential!
+2025-08-02 02:05:56,732 WARNING {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:197}  No matching scenario found for token 262a4b7a1f2c5ab6, using first available: scenario_07ed4aa3c20a594a
+2025-08-02 02:05:56,732 INFO {/home/chen/nuplan-devkit/offline_evaluation/planners/csv_receding_horizon_planner.py:155}  Set current scenario: scenario_07ed4aa3c20a594a (29 points)
+2025-08-02 02:06:00,125 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:127}  Number of successful simulations: 1
+2025-08-02 02:06:00,125 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/runner/executor.py:128}  Number of failed simulations: 0
+2025-08-02 02:06:00,125 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:147}  Finished executing runners!
+2025-08-02 02:06:00,131 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/utils.py:74}  Saved runner reports to /home/chen/nuplan-devkit/results/exp/open_loop_boxes/runner_report.parquet
+2025-08-02 02:06:00,132 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/time_callback.py:27}  Simulation duration: 00:00:04 [HH:MM:SS]
+2025-08-02 02:06:00,149 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_file_callback.py:79}  Metric files integration: 00:00:00 [HH:MM:SS]
+2025-08-02 02:06:00,186 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_aggregator_callback.py:58}  Running metric aggregator: weighted_average_metric_aggregator
+2025-08-02 02:06:00,191 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_aggregator_callback.py:69}  Metric aggregator: 00:00:00 [HH:MM:SS]
+2025-08-02 02:06:02,533 INFO {/home/chen/nuplan-devkit/nuplan/planning/simulation/main_callback/metric_summary_callback.py:344}  Metric summary: 00:00:02 [HH:MM:SS]
+2025-08-02 02:06:02,534 INFO {/home/chen/nuplan-devkit/nuplan/planning/script/run_simulation.py:80}  Finished running simulation!
