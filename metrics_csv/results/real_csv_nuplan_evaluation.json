@@ -1,0 +1,23 @@
+{
+  "evaluation_timestamp": "2025-08-02T21:53:31.775585",
+  "evaluation_type": "real_nuplan_metrics_csv_evaluation",
+  "csv_source": "/home/chen/nuplan-devkit/metrics_csv/csv_data/test_planner_data.csv",
+  "scenarios_evaluated": 3,
+  "results": [
+    {
+      "scenario_id": "scenario_0000_stationa",
+      "error": "Metric Engine failed with: unsupported operand type(s) for /: 'int' and 'Mock'",
+      "evaluation_method": "real_nuplan_metrics_engine"
+    },
+    {
+      "scenario_id": "scenario_0001_traversi",
+      "error": "Metric Engine failed with: unsupported operand type(s) for /: 'int' and 'Mock'",
+      "evaluation_method": "real_nuplan_metrics_engine"
+    },
+    {
+      "scenario_id": "scenario_0002_on_stopl",
+      "error": "Metric Engine failed with: unsupported operand type(s) for /: 'int' and 'Mock'",
+      "evaluation_method": "real_nuplan_metrics_engine"
+    }
+  ]
+}
