@@ -42,7 +42,7 @@ from src.planning.csv_trajectory import CSVTrajectory, CSVTrajectoryPoint
 
 def load_one_scenario():
     """Load exactly one real scenario from the database."""
-    print("🗂️  Loading one real nuPlan scenario...")
+    print("Loading one real nuPlan scenario...")
     
     # Try different data directories
     possible_data_roots = [
@@ -82,16 +82,16 @@ def load_one_scenario():
             
             if scenarios:
                 scenario = scenarios[0]
-                print(f"   ✅ Successfully loaded scenario: {scenario.scenario_name}")
+                print(f"   Successfully loaded scenario: {scenario.scenario_name}")
                 print(f"      Type: {scenario.scenario_type}")
                 print(f"      Duration: {scenario.get_number_of_iterations()} iterations")
                 return scenario
                 
         except Exception as e:
-            print(f"   ❌ Failed with {data_root}: {e}")
+            print(f"   Failed with {data_root}: {e}")
             continue
     
-    print(f"   ❌ Could not load any scenario")
+    print(f"   Could not load any scenario")
     return None
 
 
@@ -143,7 +143,7 @@ def csv_row_to_ego_state(row, vehicle_params):
 
 def align_csv_timestamps_to_expert(csv_data, expert_trajectory):
     """Align CSV timestamps to match expert trajectory timing."""
-    print("🕐 Aligning CSV timestamps to expert trajectory...")
+    print("Aligning CSV timestamps to expert trajectory...")
     
     # Get expert trajectory time range
     expert_states = list(expert_trajectory)
@@ -161,9 +161,13 @@ def align_csv_timestamps_to_expert(csv_data, expert_trajectory):
     print(f"   CSV data: {csv_start_time} to {csv_end_time} ({csv_duration/1e6:.2f}s)")
     
     # Create linear mapping from CSV time range to expert time range
-    # We'll map CSV data to use only the first portion of expert trajectory
-    # to ensure we stay within bounds
-    expert_portion = min(csv_duration, expert_duration * 0.8)  # Use 80% of expert duration max
+    # FIXED: Extend mapping to accommodate 2-second trajectory horizons
+    # Need extra 2 seconds for the longest trajectory horizon
+    horizon_buffer = 2e6  # 2 seconds in microseconds
+    required_expert_duration = csv_duration + horizon_buffer
+    available_expert_duration = expert_duration * 0.9  # Use 90% for safety margin
+    
+    expert_portion = min(required_expert_duration, available_expert_duration)
     expert_target_end = expert_start_time + expert_portion
     
     print(f"   Mapping CSV to: {expert_start_time} to {expert_target_end} ({expert_portion/1e6:.2f}s)")
@@ -176,15 +180,71 @@ def align_csv_timestamps_to_expert(csv_data, expert_trajectory):
         csv_data = csv_data.copy()
         csv_data['timestamp_us'] = csv_data['timestamp_us'] * scale_factor + offset
         
-        print(f"   ✅ Applied scaling: factor={scale_factor:.6f}, offset={offset:.0f}")
+        print(f"   Applied scaling: factor={scale_factor:.6f}, offset={offset:.0f}")
         print(f"   New CSV range: {csv_data['timestamp_us'].min():.0f} to {csv_data['timestamp_us'].max():.0f}")
     
     return csv_data
 
 
+def create_planner_prediction_trajectory(row):
+    """
+    CORRECTED: Create trajectory representing planner's PREDICTION.
+    
+    The horizon data represents what the planner THINKS will happen
+    in the next 2 seconds starting from the current timestamp.
+    """
+    base_time = float(row['timestamp_us']) / 1e6
+    horizon_seconds = float(row['horizon_seconds'])
+    
+    # Parse horizon arrays - these are the PLANNER'S PREDICTIONS
+    import json
+    horizon_x = json.loads(row['horizon_x'])
+    horizon_y = json.loads(row['horizon_y'])
+    horizon_heading = json.loads(row['horizon_heading'])
+    horizon_vx = json.loads(row['horizon_velocity_x'])
+    horizon_vy = json.loads(row['horizon_velocity_y'])
+    
+    # Create trajectory points from planner's prediction
+    trajectory_points = []
+    
+    # Start with current state (prediction at t=0)
+    current_point = CSVTrajectoryPoint(
+        timestamp=base_time,
+        x=float(row['ego_x']),
+        y=float(row['ego_y']),
+        heading=float(row['ego_heading']),
+        velocity_x=float(row['ego_velocity_x']),
+        velocity_y=float(row['ego_velocity_y'])
+    )
+    trajectory_points.append(current_point)
+    
+    # Add predicted future states
+    dt = horizon_seconds / len(horizon_x)
+    for i in range(len(horizon_x)):
+        predicted_time = base_time + (i + 1) * dt
+        predicted_point = CSVTrajectoryPoint(
+            timestamp=predicted_time,
+            x=horizon_x[i],        # PLANNER'S PREDICTED position
+            y=horizon_y[i],        # PLANNER'S PREDICTED position
+            heading=horizon_heading[i],    # PLANNER'S PREDICTED heading
+            velocity_x=horizon_vx[i],      # PLANNER'S PREDICTED velocity
+            velocity_y=horizon_vy[i]       # PLANNER'S PREDICTED velocity
+        )
+        trajectory_points.append(predicted_point)
+    
+    return CSVTrajectory(trajectory_points)
+
+
 def create_csv_simulation_history(csv_file, scenario_id, real_scenario):
-    """Create SimulationHistory from CSV data aligned to real scenario timing."""
-    print(f"🔄 Creating aligned SimulationHistory from CSV for {scenario_id}...")
+    """
+    CORRECTED: Create SimulationHistory with proper planner prediction trajectories.
+    
+    Each simulation sample represents:
+    - Current ego state at time T
+    - Planner's PREDICTION trajectory for T to T+2s
+    - MetricsEngine will compare prediction vs expert actual for same time period
+    """
+    print(f"Creating CORRECTED SimulationHistory from CSV for {scenario_id}...")
     
     df = pd.read_csv(csv_file)
     scenario_data = df[df['scenario_id'] == scenario_id].copy()
@@ -193,74 +253,47 @@ def create_csv_simulation_history(csv_file, scenario_id, real_scenario):
     print(f"   Found {len(scenario_data)} timesteps for {scenario_id}")
     
     if len(scenario_data) == 0:
-        print(f"   ❌ No data found for scenario {scenario_id}")
+        print(f"   No data found for scenario {scenario_id}")
         return None
     
-    # Get expert trajectory for timestamp alignment
-    expert_trajectory = real_scenario.get_expert_ego_trajectory()
+    # Skip alignment for 8s CSV - timestamps are already perfectly aligned
+    print(f"   Using pre-aligned 8s CSV timestamps (no alignment needed)")
+    print(f"   Time range: {scenario_data['timestamp_us'].min()} to {scenario_data['timestamp_us'].max()}")
+    print(f"   Duration: {(scenario_data['timestamp_us'].max() - scenario_data['timestamp_us'].min())/1e6:.1f}s")
     
-    # Align CSV timestamps to expert trajectory
-    scenario_data = align_csv_timestamps_to_expert(scenario_data, expert_trajectory)
-    
-    # Create simulation history with real scenario's map and mission
+    # Create simulation history
     history = SimulationHistory(real_scenario.map_api, real_scenario.get_mission_goal())
     vehicle_params = get_pacifica_parameters()
+    
+    print(f"\nCORRECTED LOGIC:")
+    print(f"   Each sample = Current state + Planner's 2s prediction")
+    print(f"   MetricsEngine compares prediction vs expert actual")
     
     for idx, row in scenario_data.iterrows():
         # Convert CSV to ego state with aligned timestamps
         ego_state = csv_row_to_ego_state(row, vehicle_params)
         
-        # Create multi-point trajectory starting with current state
-        trajectory_points = []
-        base_time = float(row['timestamp_us']) / 1e6
-        
-        # ALWAYS start with current ego state at current time
-        current_point = CSVTrajectoryPoint(
-            timestamp=base_time,
-            x=float(row['ego_x']),
-            y=float(row['ego_y']),
-            heading=float(row['ego_heading']),
-            velocity_x=float(row['ego_velocity_x']),
-            velocity_y=float(row['ego_velocity_y'])
-        )
-        trajectory_points.append(current_point)
-        
+        # Create planner's PREDICTION trajectory (CORRECTED)
         try:
-            # Add horizon data as future trajectory points
-            import json
-            horizon_x = json.loads(row['horizon_x'])
-            horizon_y = json.loads(row['horizon_y'])  
-            horizon_heading = json.loads(row['horizon_heading'])
-            horizon_vx = json.loads(row['horizon_velocity_x'])
-            horizon_vy = json.loads(row['horizon_velocity_y'])
-            horizon_seconds = float(row['horizon_seconds'])
-            
-            # Add future points from horizon
-            if len(horizon_x) > 0:
-                dt = horizon_seconds / len(horizon_x)
-                for i in range(len(horizon_x)):
-                    # Future trajectory points
-                    future_time = base_time + (i + 1) * dt
-                    point = CSVTrajectoryPoint(
-                        timestamp=future_time,
-                        x=horizon_x[i],
-                        y=horizon_y[i], 
-                        heading=horizon_heading[i],
-                        velocity_x=horizon_vx[i],
-                        velocity_y=horizon_vy[i]
-                    )
-                    trajectory_points.append(point)
-            
+            planner_prediction = create_planner_prediction_trajectory(row)
         except Exception as e:
-            print(f"   ⚠️  Failed to parse horizon for row {idx}: {e}")
-            # If horizon parsing fails, just use current state (already added above)
+            print(f"   Warning: Failed to create prediction for row {idx}: {e}")
+            # Fallback: create single-point trajectory
+            fallback_point = CSVTrajectoryPoint(
+                timestamp=float(row['timestamp_us']) / 1e6,
+                x=float(row['ego_x']),
+                y=float(row['ego_y']),
+                heading=float(row['ego_heading']),
+                velocity_x=float(row['ego_velocity_x']),
+                velocity_y=float(row['ego_velocity_y'])
+            )
+            planner_prediction = CSVTrajectory([fallback_point])
         
-        trajectory = CSVTrajectory(trajectory_points)
-        
-        # Debug: print trajectory time range
+        # Debug: show what we're creating
         if idx < 3:  # Only for first few samples
-            traj_times = [p.timestamp for p in trajectory_points]
-            print(f"   Trajectory {idx}: {min(traj_times):.6f} to {max(traj_times):.6f} ({len(trajectory_points)} points)")
+            traj_times = [p.timestamp for p in planner_prediction._trajectory_points]
+            print(f"   Sample {idx}: ego at {ego_state.time_point.time_us}")
+            print(f"      Planner predicts: {min(traj_times):.6f} to {max(traj_times):.6f} ({len(planner_prediction._trajectory_points)} points)")
         
         # Create simulation iteration
         iteration = SimulationIteration(
@@ -268,42 +301,44 @@ def create_csv_simulation_history(csv_file, scenario_id, real_scenario):
             index=int(row['planning_iteration'])
         )
         
-        # Create simulation sample
+        # Create simulation sample with PLANNER'S PREDICTION
         sample = SimulationHistorySample(
             iteration=iteration,
             ego_state=ego_state,
-            trajectory=trajectory,
+            trajectory=planner_prediction,  # This is the planner's PREDICTION
             observation=Mock(),
             traffic_light_status=[]
         )
         
         history.add_sample(sample)
     
-    print(f"   ✅ Created aligned SimulationHistory with {len(history.data)} samples")
+    print(f"   Created CORRECTED SimulationHistory with {len(history.data)} samples")
+    print(f"   Each sample contains planner's prediction for comparison with expert actual")
     return history
 
 
 def test_csv_with_metrics_engine():
-    """Test CSV data with real nuPlan MetricsEngine."""
-    print("🚀 Testing CSV Data with Real nuPlan MetricsEngine")
+    """Test CSV data with real nuPlan MetricsEngine using CORRECTED evaluation logic."""
+    print("Testing CSV Data with Real nuPlan MetricsEngine (CORRECTED)")
     print("=" * 60)
+    print("CORRECTED LOGIC: Comparing planner PREDICTIONS vs expert ACTUAL")
     
     # Load one real scenario
     real_scenario = load_one_scenario()
     if not real_scenario:
-        print("❌ Cannot proceed without a real scenario")
+        print("Cannot proceed without a real scenario")
         return
     
-    # Load CSV data
-    csv_file = "/home/chen/nuplan-devkit/metrics_csv/data/sample_csv/test_planner_data.csv"
+    # Load CSV data - Using 8s extended version for full 5-sample evaluation
+    csv_file = "/home/chen/nuplan-devkit/metrics_csv/data/sample_csv/test_planner_data_8s.csv"
     if not Path(csv_file).exists():
-        print(f"❌ CSV file not found: {csv_file}")
+        print(f"CSV file not found: {csv_file}")
         return
     
     # Get first scenario from CSV
     df = pd.read_csv(csv_file)
     csv_scenario_id = df['scenario_id'].iloc[0]
-    print(f"📊 Using CSV scenario: {csv_scenario_id}")
+    print(f"Using CSV scenario: {csv_scenario_id}")
     
     # Create simulation history from CSV with timestamp alignment
     csv_history = create_csv_simulation_history(csv_file, csv_scenario_id, real_scenario)
@@ -311,7 +346,7 @@ def test_csv_with_metrics_engine():
         return
     
     # Create ALL 5 metrics as expected
-    print("📊 Setting up ALL 5 metrics...")
+    print("Setting up ALL 5 metrics...")
     
     # Base L2 error metric
     l2_metric = PlannerExpertAverageL2ErrorStatistics(
@@ -352,7 +387,7 @@ def test_csv_with_metrics_engine():
         )
     ]
     
-    print(f"   ✅ Configured {len(all_metrics)} metrics:")
+    print(f"   Configured {len(all_metrics)} metrics:")
     for metric in all_metrics:
         print(f"      - {metric.name}")
     
@@ -360,7 +395,7 @@ def test_csv_with_metrics_engine():
     save_path = Path("/home/chen/nuplan-devkit/metrics_csv/results/single_test")
     metrics_engine = MetricsEngine(main_save_path=save_path, metrics=all_metrics)
     
-    print("🧮 Running MetricsEngine...")
+    print("Running MetricsEngine...")
     try:
         # Run metrics computation
         computed_metrics = metrics_engine.compute(
@@ -369,27 +404,27 @@ def test_csv_with_metrics_engine():
             planner_name="csv_planner"
         )
         
-        print(f"✅ SUCCESS! MetricsEngine completed")
-        print(f"📊 Generated metrics: {list(computed_metrics.keys())}")
+        print(f"SUCCESS! MetricsEngine completed")
+        print(f"Generated metrics: {list(computed_metrics.keys())}")
         
         # Create JSON results similar to planner_expert_metrics_results.json
         json_results = {}
         
         # Process and display actual metric results
         for metric_name, metric_files in computed_metrics.items():
-            print(f"\n📈 {metric_name}: {len(metric_files)} files generated")
+            print(f"\n{metric_name}: {len(metric_files)} files generated")
             
             # Read and display metric results from MetricFile
             for metric_file in metric_files:
                 try:
-                    print(f"   📊 Scenario: {metric_file.key.scenario_name} ({metric_file.key.scenario_type})")
-                    print(f"   🎯 Planner: {metric_file.key.planner_name}")
+                    print(f"   Scenario: {metric_file.key.scenario_name} ({metric_file.key.scenario_type})")
+                    print(f"   Planner: {metric_file.key.planner_name}")
                     
                     # Process each metric statistic in the file
                     for metric_result in metric_file.metric_statistics:
-                        print(f"\n   📈 Metric: {metric_result.metric_computator}")
-                        print(f"   🎯 **SCORE: {metric_result.metric_score:.4f}**")
-                        print(f"   📂 Category: {metric_result.metric_category}")
+                        print(f"\n   Metric: {metric_result.metric_computator}")
+                        print(f"   **SCORE: {metric_result.metric_score:.4f}**")
+                        print(f"   Category: {metric_result.metric_category}")
                         
                         # Convert to JSON format
                         metric_json = {
@@ -420,7 +455,7 @@ def test_csv_with_metrics_engine():
                                 "values": [float(v) for v in ts.values],
                                 "num_samples": len(ts.values)
                             }
-                            print(f"   📈 Time Series: {len(ts.values)} samples")
+                            print(f"   Time Series: {len(ts.values)} samples")
                             print(f"      Values: {[f'{v:.3f}' for v in ts.values]}")
                             print(f"      Mean L2 Error: {sum(ts.values)/len(ts.values):.4f}m")
                         
@@ -430,7 +465,7 @@ def test_csv_with_metrics_engine():
                         json_results[metric_result.metric_computator].append(metric_json)
                         
                 except Exception as e:
-                    print(f"   ❌ Could not process metric file: {e}")
+                    print(f"   Could not process metric file: {e}")
                     import traceback
                     traceback.print_exc()
         
@@ -442,20 +477,20 @@ def test_csv_with_metrics_engine():
         with open(results_file, 'w') as f:
             json.dump(json_results, f, indent=2)
         
-        print(f"\n💾 **JSON Results saved to: {results_file}**")
-        print(f"📊 Contains {len(json_results)} metric types with real nuPlan scores")
+        print(f"\n**JSON Results saved to: {results_file}**")
+        print(f"Contains {len(json_results)} metric types with real nuPlan scores")
         
         # Check if files were created
         if save_path.exists():
             files = list(save_path.glob("**/*"))
-            print(f"\n💾 Created {len(files)} result files in {save_path}")
+            print(f"\nCreated {len(files)} result files in {save_path}")
             for f in files[:5]:  # Show first 5
                 print(f"      {f.name}")
         
         return True
         
     except Exception as e:
-        print(f"❌ MetricsEngine failed: {e}")
+        print(f"MetricsEngine failed: {e}")
         import traceback
         traceback.print_exc()
         return False
@@ -463,4 +498,4 @@ def test_csv_with_metrics_engine():
 
 if __name__ == "__main__":
     success = test_csv_with_metrics_engine()
-    print(f"\n🎯 Final Result: {'SUCCESS' if success else 'FAILED'}")
+    print(f"\nFinal Result: {'SUCCESS' if success else 'FAILED'}")

@@ -77,10 +77,10 @@ class CSVDataAnalyzer:
         """
         try:
             self.df = pd.read_csv(self.csv_file_path, **kwargs)
-            print(f"✓ Loaded CSV with {len(self.df)} rows and {len(self.df.columns)} columns")
+            print(f"Loaded CSV with {len(self.df)} rows and {len(self.df.columns)} columns")
             return True
         except Exception as e:
-            print(f"✗ Failed to load CSV: {e}")
+            print(f"Failed to load CSV: {e}")
             return False
     
     def analyze_structure(self) -> Dict[str, Any]:
@@ -408,7 +408,7 @@ class CSVDataAnalyzer:
         with open(output_path, 'w') as f:
             json.dump(export_data, f, indent=2)
         
-        print(f"✓ Analysis exported to: {output_path}")
+        print(f"Analysis exported to: {output_path}")
         return str(output_path)
     
     def print_summary(self):
@@ -426,13 +426,13 @@ class CSVDataAnalyzer:
         print("CSV DATA STRUCTURE ANALYSIS SUMMARY")
         print("=" * 60)
         
-        print(f"\n📊 BASIC INFO:")
+        print(f"\nBASIC INFO:")
         print(f"   Rows: {basic_info['total_rows']:,}")
         print(f"   Columns: {basic_info['total_columns']}")
         print(f"   Memory: {basic_info['memory_usage_mb']:.1f} MB")
         print(f"   Has null values: {basic_info['has_null_values']}")
         
-        print(f"\n⏰ TEMPORAL STRUCTURE:")
+        print(f"\nTEMPORAL STRUCTURE:")
         time_candidates = temporal_analysis.get("time_candidates", [])
         print(f"   Time columns found: {len(time_candidates)}")
         for col in time_candidates:
@@ -441,18 +441,18 @@ class CSVDataAnalyzer:
                 freq = analysis["frequency_analysis"].get("estimated_frequency_hz", "Unknown")
                 print(f"   - {col}: {freq:.1f} Hz" if isinstance(freq, (int, float)) else f"   - {col}: {freq}")
         
-        print(f"\n🎯 TRAJECTORY STRUCTURE:")
+        print(f"\nTRAJECTORY STRUCTURE:")
         trajectory_sequences = trajectory_analysis.get("trajectory_sequences", {})
         print(f"   Trajectory sequences found: {len(trajectory_sequences)}")
         for prefix, info in trajectory_sequences.items():
             print(f"   - {prefix}: {info['length']} points")
         
-        print(f"\n✅ DATA QUALITY:")
+        print(f"\nDATA QUALITY:")
         print(f"   Completeness: {quality['completeness_ratio']:.1%}")
         print(f"   Duplicate rows: {quality['duplicate_rows']}")
         
         if self.recommended_mapping:
-            print(f"\n🗺️  RECOMMENDED MAPPING:")
+            print(f"\nRECOMMENDED MAPPING:")
             mapping = self.recommended_mapping
             for field_name, value in mapping.__dict__.items():
                 if value is not None:

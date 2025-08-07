@@ -145,14 +145,14 @@ class CSVTrajectory(AbstractTrajectory):
         
         # Debug output for problematic queries
         if time_point.time_us < start_time or time_point.time_us > end_time:
-            print(f"   🔍 Query time: {time_point.time_us}, Range: {start_time} to {end_time}")
+            print(f"   Query time: {time_point.time_us}, Range: {start_time} to {end_time}")
         
         # Allow extrapolation beyond trajectory bounds
         if time_point.time_us < (start_time - tolerance_us):
-            print(f"   ⚠️  Extrapolating before start: returning first state")
+            print(f"   Warning: Extrapolating before start: returning first state")
             return self._ego_states[0]
         elif time_point.time_us > (end_time + tolerance_us):
-            print(f"   ⚠️  Extrapolating beyond end: returning last state") 
+            print(f"   Warning: Extrapolating beyond end: returning last state") 
             return self._ego_states[-1]
         
         # Find surrounding states for interpolation

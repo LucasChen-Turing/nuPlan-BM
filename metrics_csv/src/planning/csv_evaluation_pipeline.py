@@ -123,7 +123,7 @@ class CSVEvaluationPipeline:
         Returns:
             Dictionary containing evaluation summary and results
         """
-        print("🚀 Starting CSV-based Evaluation Pipeline")
+        print("Starting CSV-based Evaluation Pipeline")
         print("=" * 60)
         
         try:
@@ -146,16 +146,16 @@ class CSVEvaluationPipeline:
             summary = self._generate_summary()
             self._save_results(summary)
             
-            print("✅ Evaluation pipeline completed successfully!")
+            print("Evaluation pipeline completed successfully!")
             return summary
             
         except Exception as e:
-            print(f"❌ Evaluation pipeline failed: {e}")
+            print(f"Evaluation pipeline failed: {e}")
             raise
     
     def _analyze_csv_data(self):
         """Analyze CSV data structure and generate column mapping."""
-        print("\n1️⃣ Analyzing CSV data structure...")
+        print("\n1. Analyzing CSV data structure...")
         
         # Initialize analyzer
         analyzer = CSVDataAnalyzer(str(self.csv_file_path))
@@ -165,14 +165,14 @@ class CSVEvaluationPipeline:
             raise RuntimeError(f"Failed to load CSV file: {self.csv_file_path}")
         
         self.csv_data = analyzer.df
-        print(f"   ✓ Loaded CSV with {len(self.csv_data)} rows, {len(self.csv_data.columns)} columns")
+        print(f"   Loaded CSV with {len(self.csv_data)} rows, {len(self.csv_data.columns)} columns")
         
         # Analyze structure
         analyzer.analyze_structure()
         self.column_mapping = analyzer.generate_mapping_recommendations()
         
         # Print mapping summary
-        print("   📋 Column Mapping:")
+        print("   Column Mapping:")
         for field_name, value in self.column_mapping.__dict__.items():
             if value is not None:
                 print(f"      {field_name}: {value}")
@@ -180,11 +180,11 @@ class CSVEvaluationPipeline:
         # Export analysis
         analysis_path = self.results_dir / "csv_analysis.json"
         analyzer.export_analysis(str(analysis_path))
-        print(f"   💾 Analysis saved to: {analysis_path}")
+        print(f"   Analysis saved to: {analysis_path}")
     
     def _initialize_database(self):
         """Initialize nuPlan database connection."""
-        print("\n2️⃣ Initializing nuPlan database connection...")
+        print("\n2. Initializing nuPlan database connection...")
         
         try:
             # Create scenario mapping
@@ -202,14 +202,14 @@ class CSVEvaluationPipeline:
                 scenario_mapping=scenario_mapping
             )
             
-            print(f"   ✓ Connected to database at: {self.config.data_root}")
+            print(f"   Connected to database at: {self.config.data_root}")
             
         except Exception as e:
             raise RuntimeError(f"Failed to initialize database: {e}")
     
     def _load_scenarios(self):
         """Load and filter scenarios from database."""
-        print("\n3️⃣ Loading scenarios from database...")
+        print("\n3. Loading scenarios from database...")
         
         try:
             # Create scenario filter
@@ -230,7 +230,7 @@ class CSVEvaluationPipeline:
             worker = Sequential()
             self.available_scenarios = self.scenario_builder.get_scenarios(scenario_filter, worker)
             
-            print(f"   ✓ Loaded {len(self.available_scenarios)} scenarios")
+            print(f"   Loaded {len(self.available_scenarios)} scenarios")
             
             # Print scenario summary
             scenario_types = {}
@@ -238,7 +238,7 @@ class CSVEvaluationPipeline:
                 scenario_type = scenario.scenario_type
                 scenario_types[scenario_type] = scenario_types.get(scenario_type, 0) + 1
             
-            print("   📊 Scenario types:")
+            print("   Scenario types:")
             for scenario_type, count in scenario_types.items():
                 print(f"      {scenario_type}: {count}")
                 
@@ -247,7 +247,7 @@ class CSVEvaluationPipeline:
     
     def _match_scenarios(self):
         """Match CSV data to database scenarios."""
-        print("\n4️⃣ Matching CSV data to database scenarios...")
+        print("\n4. Matching CSV data to database scenarios...")
         
         # Initialize matcher
         matcher = ScenarioMatcher(
@@ -259,7 +259,7 @@ class CSVEvaluationPipeline:
         # Find matches
         self.scenario_matches = matcher.find_best_matches(self.available_scenarios)
         
-        print(f"   ✓ Found {len(self.scenario_matches)} scenario matches")
+        print(f"   Found {len(self.scenario_matches)} scenario matches")
         
         # Print match summary
         for match in self.scenario_matches:
@@ -271,14 +271,14 @@ class CSVEvaluationPipeline:
         matches_path = self.results_dir / "scenario_matches.json"
         matcher.matches = self.scenario_matches  # Set matches for export
         matcher.export_matches(str(matches_path))
-        print(f"   💾 Matches saved to: {matches_path}")
+        print(f"   Matches saved to: {matches_path}")
         
         if not self.scenario_matches:
             raise RuntimeError("No scenario matches found - cannot proceed with evaluation")
     
     def _evaluate_scenarios(self):
         """Evaluate matched scenarios using metrics engine."""
-        print("\n5️⃣ Evaluating matched scenarios...")
+        print("\n5. Evaluating matched scenarios...")
         
         # Initialize converter
         converter = CSVEgoStateConverter(self.column_mapping)
@@ -301,7 +301,7 @@ class CSVEvaluationPipeline:
                 )
                 
                 # Compute metrics
-                print(f"   🧮 Computing metrics...")
+                print(f"   Computing metrics...")
                 
                 metrics_engine = MetricsEngine(metrics=metrics, main_save_path=None, timestamp=None)
                 computed_metrics = metrics_engine.compute(history_list=[history])
@@ -329,10 +329,10 @@ class CSVEvaluationPipeline:
                         print(f"      {metric_name}: {score:.4f}")
                 
                 self.evaluation_results.append(scenario_result)
-                print(f"   ✅ Scenario evaluation completed")
+                print(f"   Scenario evaluation completed")
                 
             except Exception as e:
-                print(f"   ❌ Failed to evaluate scenario {match.scenario_name}: {e}")
+                print(f"   Failed to evaluate scenario {match.scenario_name}: {e}")
                 # Add failed result
                 failed_result = {
                     "scenario_id": match.scenario_id,
@@ -449,12 +449,12 @@ class CSVEvaluationPipeline:
                 print(f"         Warning: Failed to process iteration {i}: {e}")
                 continue
         
-        print(f"      ✓ Created simulation history with {len(history.data)} samples")
+        print(f"      Created simulation history with {len(history.data)} samples")
         return history
     
     def _setup_metrics(self) -> List:
         """Setup metrics for evaluation."""
-        print("   📊 Setting up metrics...")
+        print("   Setting up metrics...")
         
         # Configuration
         comparison_horizon = self.config.comparison_horizon
@@ -501,12 +501,12 @@ class CSVEvaluationPipeline:
             )
         ]
         
-        print(f"   ✓ Configured {len(metrics)} metrics")
+        print(f"   Configured {len(metrics)} metrics")
         return metrics
     
     def _generate_summary(self) -> Dict[str, Any]:
         """Generate evaluation summary."""
-        print("\n6️⃣ Generating evaluation summary...")
+        print("\n6. Generating evaluation summary...")
         
         if not self.evaluation_results:
             return {"error": "No evaluation results available"}
@@ -572,20 +572,20 @@ class CSVEvaluationPipeline:
             }
         }
         
-        print(f"   ✓ Summary generated for {len(successful_results)} successful evaluations")
-        print(f"   📊 Overall performance: {overall_performance:.1%} ({performance_level})")
+        print(f"   Summary generated for {len(successful_results)} successful evaluations")
+        print(f"   Overall performance: {overall_performance:.1%} ({performance_level})")
         
         return summary
     
     def _save_results(self, summary: Dict[str, Any]):
         """Save evaluation results to files."""
-        print("\n💾 Saving evaluation results...")
+        print("\nSaving evaluation results...")
         
         # Save main results
         results_path = self.results_dir / "evaluation_results.json"
         with open(results_path, 'w') as f:
             json.dump(summary, f, indent=2)
-        print(f"   ✓ Main results saved to: {results_path}")
+        print(f"   Main results saved to: {results_path}")
         
         # Save detailed results if enabled
         if self.config.save_detailed_results:
@@ -610,9 +610,9 @@ class CSVEvaluationPipeline:
             
             with open(detailed_path, 'w') as f:
                 json.dump(detailed_results, f, indent=2)
-            print(f"   ✓ Detailed results saved to: {detailed_path}")
+            print(f"   Detailed results saved to: {detailed_path}")
         
-        print(f"   📁 All results saved to directory: {self.results_dir}")
+        print(f"   All results saved to directory: {self.results_dir}")
 
 
 def main():

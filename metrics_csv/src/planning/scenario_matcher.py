@@ -99,7 +99,7 @@ class ScenarioMatcher:
     
     def _prepare_csv_data(self):
         """Prepare CSV data for matching operations."""
-        print("🔧 Preparing CSV data for scenario matching...")
+        print("Preparing CSV data for scenario matching...")
         
         # Group CSV rows by scenario if scenario column exists
         if self.mapping.scenario_id_col and self.mapping.scenario_id_col in self.csv_data.columns:
@@ -133,7 +133,7 @@ class ScenarioMatcher:
         Returns:
             List of scenario matches
         """
-        print("🎯 Attempting scenario ID-based matching...")
+        print("Attempting scenario ID-based matching...")
         
         matches = []
         scenario_lookup = {scenario.scenario_name: scenario for scenario in available_scenarios}
@@ -203,7 +203,7 @@ class ScenarioMatcher:
         Returns:
             List of scenario matches
         """
-        print("⏰ Attempting temporal alignment matching...")
+        print("Attempting temporal alignment matching...")
         
         if not self.mapping.timestamp_col or self.mapping.timestamp_col not in self.csv_data.columns:
             print("   No timestamp column available - skipping temporal matching")
@@ -281,7 +281,7 @@ class ScenarioMatcher:
         Returns:
             List of scenario matches
         """
-        print("📍 Attempting spatial trajectory matching...")
+        print("Attempting spatial trajectory matching...")
         
         matches = []
         
@@ -409,7 +409,7 @@ class ScenarioMatcher:
         Returns:
             List of best scenario matches
         """
-        print("🔍 Finding best scenario matches using all strategies...")
+        print("Finding best scenario matches using all strategies...")
         
         all_matches = []
         
@@ -429,7 +429,7 @@ class ScenarioMatcher:
         # Remove duplicates and select best matches
         best_matches = self._select_best_matches(all_matches)
         
-        print(f"🎯 Selected {len(best_matches)} best matches")
+        print(f"Selected {len(best_matches)} best matches")
         return best_matches
     
     def _select_best_matches(self, all_matches: List[ScenarioMatch]) -> List[ScenarioMatch]:
@@ -497,7 +497,7 @@ class ScenarioMatcher:
         with open(output_path, 'w') as f:
             json.dump(export_data, f, indent=2)
         
-        print(f"✓ Exported {len(export_data)} matches to: {output_path}")
+        print(f"Exported {len(export_data)} matches to: {output_path}")
 
 
 def main():
